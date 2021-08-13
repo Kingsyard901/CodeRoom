@@ -1,15 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Code Room</title>
-</head>
-<body>
-    
 
-    <script src="./app.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Thanks to creator for smooth fullpage scroll on https://codepen.io/fabeat/pen/EzxEGe -->
+  <title>Code Room</title>
+</head>
+
+<body>
+
+  <div class="wrap">
+    <div id="wrap">
+      <!-- Home -->
+      <section>
+        <div class="sectionOne">
+          <h1 class="sectionOneHeader shadow">CODE RO<span class="offset">O</span>M</h1>
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+          <div class="pageParagraph fade-in-text">
+          <p>Portfolio, About and a eerie starting page.</p>
+          <p>All in one.</p>
+          <p>By Henrik Ekelund.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Artwork -->
+      <section>
+        <div class="flexboxedLeft">
+          <h2 class="pageHeader">Portfolio</h2>
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </div>
+
+        <!-- START Image Gallery -->
+
+        <div class="row">
+          <div class="column">
+            <img src="/img/artwork/pexels-fotografierende-1461816.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/img/artwork/pexels-kevin-bidwell-2183132.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/img/artwork/pexels-letícia-lua-3140020.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/img/artwork/pexels-marcelo-fernandes-2168261.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="/img/artwork/pexels-fotografierende-1461816.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="/img/artwork/pexels-kevin-bidwell-2183132.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="/img/artwork/pexels-letícia-lua-3140020.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="/img/artwork/pexels-marcelo-fernandes-2168261.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+        
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-fotografierende-1461816.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-kevin-bidwell-2183132.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-letícia-lua-3140020.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-marcelo-fernandes-2168261.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+          </div>
+        </div>
+
+        <!-- END Image Gallery -->
+
+      </section>
+
+      <!-- Booking -->
+      <section>
+        <div class="flexboxedLeft">
+          <h2 class="pageHeader">Languages and Frameworks</h2>
+          <p class="pageParagraph">Just some Lorum Ipsum text here.</p>
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section>
+        <div class="flexboxedRight">
+          <h2 class="pageHeader">Contact Information</h2>
+          <h5 class="pageParagraph">Phone</h5>
+          <p class="pageParagraph">+46 (0) 73 986 91 91</p>
+          <h5 class="pageParagraph">Location</h5>
+          <p class="pageParagraph">Söderhamn, Gävleborg Sweden</p>
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section>
+        <div class="flexboxedRight">
+          <h2 class="pageHeader">Who Am I?</h2>
+          <p class="pageParagraph">Lorem Ipsum is simply <span class="offset">dummy</span> text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially <span class="offset2">unchanged</span>. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        </div>
+
+
+        <div class="menu">
+          <div class="label">Hover Me</div>
+          <div class="spacer"></div>
+          <div class="item"><span>GitHub</span></div>
+          <div class="item"><span>Heroku</span></div>
+          <div class="item"><span>Instagram</span></div>
+      </div>
+
+      
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/fabeat/responsive-fullpage-scroll@v1.0.3/dist/fullpage-scroll.js"></script>
+  <script src="/script.js"></script>
+
 </body>
+
 </html>
