@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
+
+
 // START Script Image Gallery
 
 function openModal() {

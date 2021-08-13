@@ -271,8 +271,8 @@ section:first-child {
 /* Artwork */
 section:nth-child(2) {
   background-image: 
-  linear-gradient(to right, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
-  url(/img/pexels-oleg-magni-1040499.jpg);
+  linear-gradient(to left, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
+  url(/img/pexels-marcelo-jaboo-696407.jpg);
 }
 
 
@@ -438,7 +438,7 @@ section:nth-child(4) {
 /* About */
 section:nth-child(5) {
   background-image: 
-  linear-gradient(to right, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
+  linear-gradient(to left, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
   url(/img/pexels-zeke-nesher-838696.jpg);
 }
 
