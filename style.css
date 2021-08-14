@@ -277,8 +277,56 @@ section:nth-child(2) {
 
 
 
+/* Image Gallery Start New Version */
+.container {
+  max-width: 1600px;
+  padding: 50px;
+  margin: 0 auto;
+}
 
-/* START of Image Gallery CSS */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.galleryImg {
+  max-width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 250ms;
+  cursor: pointer;
+}
+
+.galleryImg:hover {
+  transform: translate(-2px);
+  box-shadow: 3px 3px 10px black;
+}
+
+#popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 250ms transform;
+  padding: 50px;
+}
+
+#selectedImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* END OF Image Gallery New Version */
+
+
+
+/* START of Image Gallery CSS OLD VERSION*/
 .row > .column {
   padding: 0 8px;
   box-sizing: border-box;
@@ -295,7 +343,7 @@ section:nth-child(2) {
   width: 20%;
 }
 
-/* The Modal (background) */
+/* The Modal background */
 .modal {
   display: none;
   position: fixed;
@@ -410,7 +458,7 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* END of Image Gallery CSS */
+/* END of Image Gallery CSS OLD VERSION*/
 
 
 
