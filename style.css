@@ -136,7 +136,7 @@ section {
 
 
 
-/* Text columns positioning for pages */
+/* Text columns positioning and sizes for pages */
 .flexboxedLeft {
   display: flex;
   flex-direction: column;
@@ -157,14 +157,12 @@ section {
   color: lightgray;
   font-size: 70%;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
-
 }
 
 .pageParagraph {
   color: lightgray;
   font-size: large;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
-
 }
 
 /* fade in used on first page with pageparagraph */
@@ -275,14 +273,52 @@ section:nth-child(2) {
   url(/img/pexels-marcelo-jaboo-696407.jpg);
 }
 
-
+.projectCards {
+  display: flex;
+  grid-gap: 5%;
+}
 
 /* Project Gallery Start New Version */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.11);
+}
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
 
+.flip-card-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
 
 
 
@@ -353,7 +389,7 @@ section:nth-child(3) {
 section:nth-child(4) {
   background-image: 
   linear-gradient(to right, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
-  url(/img/pexels-chepté-cormani-1416530.jpg);
+  url(/img/pexels-federico-orlandi-3260626.jpg);
 }
 
 
@@ -363,7 +399,7 @@ section:nth-child(4) {
 section:nth-child(5) {
   background-image: 
   linear-gradient(to left, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
-  url(/img/pexels-zeke-nesher-838696.jpg);
+  url(/img/pexels-tomasz-filipek-1637438.jpg);
 }
 
 #indicator {
@@ -440,12 +476,13 @@ section:nth-child(5) {
   opacity: 0;
   transition: opacity 0.5s ease, top 0.5s ease;
   transition-delay: 0;
+  color: rgba(77, 77, 77, 0.603);
 }
 span {
   transition: color 0.5s ease;
 }
 .item:hover span {
-  color: #ff0000;
+  color: whitesmoke;
 }
 .menu:hover .spacer:before {
   width: 100%;
