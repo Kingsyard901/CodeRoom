@@ -308,6 +308,7 @@ section:nth-child(2) {
 
 .projectCards {
   display: flex;
+  flex-wrap: wrap;
   grid-gap: 5%;
 }
 
@@ -317,6 +318,7 @@ section:nth-child(2) {
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  padding: 5%;
 }
 
 .flip-card-inner {
@@ -422,7 +424,7 @@ section:nth-child(3) {
 section:nth-child(4) {
   background-image: 
   linear-gradient(to right, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
-  url(/img/pexels-federico-orlandi-3260626.jpg);
+  url(/img/pexels-aaditya-arora-592753.jpg);
 }
 
 
@@ -432,7 +434,7 @@ section:nth-child(4) {
 section:nth-child(5) {
   background-image: 
   linear-gradient(to left, rgba(160, 160, 160, 0.26), rgb(0, 0, 0)),
-  url(/img/pexels-tomasz-filipek-1637438.jpg);
+  url(/img/pexels-oleg-magni-1040499.jpg);
 }
 
 #indicator {
