@@ -37,7 +37,7 @@
       <!-- Portfolio -->
       <section>
         <div class="flexboxedLeft">
-          <h2 class="pageHeader">Portfolio</h2>
+          <h2 class="pageHeader" style="font-size: large;">Portfolio</h2>
           <svg class="arrows">
             <path class="a1" d="M0 0 L30 32 L60 0"></path>
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -46,107 +46,66 @@
         </div>
 
         <!-- START Project Gallery -->
+        <!-- NEW CARD VERSION -->
+        <div class="container">
 
-        <!-- Cards -->
-        <div class="projectCards">
-
-          <!-- Project 1 -->
-          <a href="/projects/bugtic.html">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="/projects/bugtic_img.png" alt="bugtic" style="width:300px;height:300px;border-radius:10px;">
-                </div>
-                <div class="flip-card-back">
-                  <h1 class="pageHeader" style="font-size: 30%;">BugTic</h1> 
-                  <p class="pageParagraph">Bug Tracker - Simple bug tracker / ticketsystem build in Fullstack with NodeJS with MongoDB and Bootstrap.</p> 
-                  <p class="pageParagraph">This is my biggest personal project and the one I had most fun with!</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Project 2 -->
-          <a href="/projects/api-project.html">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="/projects/RegisterSubscriber_Bootstrap_NodeJS.png" alt="api-project" style="width:300px;height:300px;border-radius:10px;">
-                </div>
-                <div class="flip-card-back">
-                  <h1 class="pageHeader" style="font-size: 30%;">API Mailchimp</h1> 
-                  <p class="pageParagraph">Registration form with API to register input to Mailchimp.</p> 
-                  <p class="pageParagraph">Built with NodeJS and Bootstrap.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Project 3 -->
-          <a href="https://softwashing.se">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="/projects/softwashingSmaller.png" alt="softwashing" style="width:300px;height:300px;border-radius:10px;">
-                </div>
-                <div class="flip-card-back">
-                  <h1 class="pageHeader" style="font-size: 30%;">Softwashing</h1> 
-                  <p class="pageParagraph">Website for paying customer's business. I wish to give big thanks to Softwashing for the trust!</p> 
-                  <p class="pageParagraph">Set up with Wordpress and template and redesigned with Elementor and CSS. Also working with SEO, content and SSL continuously.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Project 4 -->
-          <a href="https://coderoom.se">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="/projects/coderoomWeb2021.png" alt="coderoom" style="width:300px;height:300px;border-radius:10px;">
-                </div>
-                <div class="flip-card-back">
-                  <h1 class="pageHeader" style="font-size: 30%;">CodeRoom</h1> 
-                  <p class="pageParagraph">My latest portfolio project in 2021.</p> 
-                  <p class="pageParagraph">Created with standard HTML, CSS and Javascript.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Project 5 -->
-          <a href="https://norralaconsulting.se">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="/projects/norralaconsultingWeb2020.png" alt="norrala-consulting" style="width:300px;height:300px;border-radius:10px;">
-                </div>
-                <div class="flip-card-back">
-                  <h1 class="pageHeader" style="font-size: 30%;">Norrala Consulting</h1> 
-                  <p class="pageParagraph">My "business" -page and portfolio from 2020.</p> 
-                  <p class="pageParagraph">Created with standard HTML, CSS and Bootstrap.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Project 6 -->
-          <a href="https://replit.com/@kingsyard901/Searcher#index.html">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="/projects/JS Storage Keyup Search function.png" alt="Javacript Search and store" style="width:300px;height:300px;border-radius:10px;">
-                </div>
-                <div class="flip-card-back">
-                  <h1 class="pageHeader" style="font-size: 30%;">Javascript Search and store</h1> 
-                  <p class="pageParagraph">A project where I needed to be able to store data locally as well as searching/sorting the data.</p> 
-                  <p class="pageParagraph">Created with standard HTML, CSS and Javascript.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
+          <div class="card1">
+              <i class="fab fa-html5 transIcon"></i>
+              <i class="fab fa-css3-alt transIcon"></i>
+              <i class="fab fa-js transIcon"></i>
+              <i class="fab fa-node transIcon"></i>
+              <i class="fas fa-database transIcon"></i>
+              <h3 class="pageParagraph">BugTic</h3>
+              <p class="pageParagraph">Bug (Ticket) Tracker made in NodeJS connected to a local MongoDB database.
+              </p>
+              <a class="cardButton linkStyleNone" href="https://github.com/Kingsyard901/Node.js-BugTracker-Project">Read more</a>
+          </div>
+  
+          <div class="card2">
+            <i class="fab fa-python transIcon"></i>
+            <h3 class="pageParagraph">API - Mailchimp</h3>
+            <p class="pageParagraph">Registersida med API för registrering till Mailchimp.</p>
+            <a class="cardButton linkStyleNone" href="#">Read more</a>
+          </div>
+  
+          <div class="card3">
+            <i class="fab fa-html5 transIcon"></i>
+            <i class="fab fa-css3-alt transIcon"></i>
+            <i class="fab fa-js transIcon"></i>
+            <h3 class="pageParagraph">CodeRoom .se</h3>
+            <p class="pageParagraph">My latest portfolio made with the good old HTML, CSS and Javascript.</p>
+            <a class="cardButton linkStyleNone" href="https://github.com/Kingsyard901/CodeRoom">Read more</a>
+          </div>
+  
+          <div class="card4">
+            <i class="fab fa-html5 transIcon"></i>
+            <i class="fab fa-css3-alt transIcon"></i>
+            <h3 class="pageParagraph">Norrala Consulting .se</h3>
+            <p class="pageParagraph">My business/portfolio page from 2020. Styled with Bootstrap.</p>
+            <a class="cardButton linkStyleNone" href="https://github.com/Kingsyard901/NorralaConsulting2021">Read more</a>
+          </div>
+  
+          <div class="card5">
+            <i class="fab fa-html5 transIcon"></i>
+            <i class="fab fa-css3-alt transIcon"></i>
+            <i class="fab fa-js transIcon"></i>
+            <h3 class="pageParagraph">Javascript & Key-up Sök</h3>
+            <p class="pageParagraph">Ett av de första projekten jag gjort med Javascript med sök/sorteringsfunktion.</p>
+            <a class="cardButton linkStyleNone" href="#">Read more</a>
+          </div>
+  
+          <div class="card6">
+            <i class="fab fa-html5 transIcon"></i>
+            <i class="fab fa-css3-alt transIcon"></i>
+            <i class="fab fa-js transIcon"></i>
+            <i class="fab fa-wordpress transIcon"></i>
+            <h3 class="pageParagraph">Softwashing .se (Uppdrag)</h3>
+            <p class="pageParagraph">Företagssida till kund i Wordpress med template <br>som sedan är omdesignad med Elementor utefter kunds branding.</p>
+            <a class="cardButton linkStyleNone" href="https:www.softwashing.se/">Read more</a>
+          </div>
+  
         </div>
+        <!-- END OF NEW CARD -->
 
 
         <!-- If I want to use a regular Image gallery, use out-commented code below. -->
